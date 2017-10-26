@@ -44,7 +44,7 @@ function removeAllButton(){
 // Made sure to limit the amount of gifs on the page to 10 at the end of the URL.
 function displayGiphs(){
     var action = $(this).attr("data-name");
-    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + action + "&api_key=dc6zaTOxFJmzC&limit=10";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + action + "&api_key=dc6zaTOxFJmzC&limit=10";
     // double check work by console logging the URL.
     console.log(queryURL);
     // ajax call. Important to pull the right gifs using API. The var queryURL holds the URL
